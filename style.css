@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(14, 28, 32);
+}
+
+
+header {
+    background-color: rgb(14, 28, 32);
+    text-align: center;
+    padding: 25px;
+    font-size: large;
+}
+
+.nav_bar {
+    background-color: rgb(19, 37, 43);
+    height: 3.4375rem;
+}
+.nav_bar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+}
+.nav_bar a:hover {
+    background-color: rgb(54, 108, 121);
+    height: 100%;
+    border-radius: .3rem;
+}
+
+#home_tab {
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+
+#projects_tab {
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+
+}
+
+
+.dropbtn {
+    background-color: rgb(48, 94, 109);
+    font-size: large;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropbtn:hover {
+    background-color: deepskyblue;
+    transition: 0.3s;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 36px;
+    background-color: rgb(48, 94, 109);
+    min-width: 100%;
+    overflow: auto;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 10px 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    padding: 10px 14px;
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.dropdown a:hover {background-color: rgb(19, 37, 43);}
+
+.show {display: block;}
+
+.row1 {
+    padding: 60px;
+    background-color: rgb(31, 61, 71);
+    display: flex;
+    column-gap: 5rem;
+    min-height: 25px;
+}
+
+#aside1 {
+    float: left;
+    width: 40%;
+    font-size: 1.8rem;
+}
+
+#aside1 hr {
+    background-color: deepskyblue;
+    color: deepskyblue;
+    height: 1rem;
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.row2 {
+    padding-top: 60px;
+    display: flex;
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+
+#BorutoImage {
+    float: left;
+    width: 100%;
+    margin-top: -60px;
+    min-width: 15.65625rem;
+}
+
+#section2 p {
+    color: black;
+    font-size: medium;
+}
+
+#section2 {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#section1 {
+    float: left;
+    width: 60%;
+    max-width: 700px;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+section {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+section ul li {
+    margin-left: -20px;
+}
+
+article {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+footer {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 5rem;
+    background-color: rgb(19, 37, 43);
+
+}
+
+#Contacts {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-left: -50px;
+    margin-top: -60px;
+}
+
+#ContactsTable {
+    background-color: rgb(33, 64, 75);
+    max-width: 330px;
+    margin-left: -50px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    column-gap: 40px;
+    min-height: 25px;
+}
+
+#ContactsTable a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+    section, article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .row1 {
+        display: grid;
+    }
+    .row2 {
+        display: grid;
+    }
+    #BorutoImage {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+     #aside1 hr {
+        position: absolute;
+        top: 439px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #home_tab, #projects_tab {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #projects_tab {
+        position: absolute;
+        top: 100x;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #ContactsTable {
+        display: grid;
+    }
+}

@@ -17,10 +17,34 @@ header {
     font-size: large;
 }
 
+.tab1, .tab2 {
+    display: inline-block;
+    position: relative;
+}
+
+.tab1 hr, .tab2 hr {
+    display: none;
+    background-color: deepskyblue;
+    color: deepskyblue;
+    height: 0.3rem;
+    width: 30%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+.tab1:hover hr,
+.tab2:hover hr {
+    display: block;
+}
+
+
 .nav_bar {
     background-color: rgb(19, 37, 43);
     height: 3.4375rem;
 }
+
 .nav_bar a {
     color: white;
     text-align: center;
@@ -28,8 +52,9 @@ header {
     display: inline-block;
     height: 100%;
 }
+
 .nav_bar a:hover {
-    background-color: rgb(54, 108, 121);
+    background-color: rgb(24, 47, 54);
     height: 100%;
     border-radius: .3rem;
 }
@@ -39,6 +64,7 @@ header {
     font-weight: bold;
     font-size: large;
     text-decoration: none;
+    float: left;
 }
 
 #projects_tab {
@@ -46,7 +72,8 @@ header {
     font-weight: bold;
     font-size: large;
     text-decoration: none;
-
+    float: left;
+    color: grey;
 }
 
 
@@ -82,7 +109,7 @@ header {
     min-width: 100%;
     overflow: auto;
     box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
-    border-bottom-right-radius: 10px 10px;
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -95,7 +122,7 @@ header {
 
 }
 
-.dropdown a:hover {background-color: rgb(19, 37, 43);}
+.dropdown a:hover {background-color: rgb(25, 48, 56);}
 
 .show {display: block;}
 
@@ -125,7 +152,7 @@ header {
 .row2 {
     padding-top: 60px;
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgb(24, 47, 54);
     min-height: 100px;
 }
 
@@ -138,14 +165,14 @@ header {
 }
 
 #section2 p {
-    color: black;
-    font-size: medium;
+    font-size: large;
 }
 
 #section2 {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 40rem;
 }
 #section1 {
     float: left;
@@ -155,10 +182,26 @@ header {
     min-width: 250px;
 }
 section {
-    width: 50%;
-    float: left;
-    padding: 10px;
-    margin-top: 60px;
+    background-color: rgb(48, 94, 109);
+    padding: 2rem;
+}
+
+section li {
+    padding: 0.8rem;
+}
+
+section a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+}
+
+section li:hover {
+    background-color: rgb(0, 191, 255, 0.3);
+    transition: 0.3s;
+    border-radius: 10px;
+    color: white;
 }
 
 section ul li {
@@ -166,10 +209,8 @@ section ul li {
 }
 
 article {
-    width: 50%;
-    float: left;
-    padding: 10px;
-    margin-top: 60px;
+    background-color: rgb(38, 74, 86);
+    padding: 2rem;
 }
 
 footer {
@@ -190,7 +231,7 @@ footer {
 
 #ContactsTable {
     background-color: rgb(33, 64, 75);
-    max-width: 330px;
+    max-width: 370px;
     margin-left: -50px;
     border-radius: 10px;
     text-align: left;
@@ -199,6 +240,10 @@ footer {
     min-height: 25px;
 }
 
+#ContactsTable li {
+    list-style: none;
+    padding: 0.5rem;
+}
 #ContactsTable a {
     color: white;
     text-decoration: none;
@@ -206,6 +251,10 @@ footer {
     font-size: large;
 }
 
+#ContactsTable a:hover {
+    color: deepskyblue;
+    transition: 0.3s;
+}
 @media screen and (max-width: 700px) {
     section, article {
         width: 100%;
@@ -238,15 +287,6 @@ footer {
 
     .dropdown {
         display: inline;
-        margin-left: 10px;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    #projects_tab {
-        position: absolute;
-        top: 100x;
-        left: 80px;
     }
 }
 

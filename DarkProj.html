@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Projects</h2>
+    </header>
+    <nav class="nav_bar">
+        <div class="tab1">
+            <span><a href="dark.html" id="home_tab" style="color: grey;">Home</a></span>
+            <hr>
+        </div>
+        <div class="tab2">
+            <span><a href="DarkProj.html" id="projects_tab" style="color: white;">Projects</a></span>
+            <hr>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="dark.html">Home</a>
+                <a href="DarkProj.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>Featured Projects</h2>
+            <ul>
+                <li><a href="https://github.com/darkuchihagare-sudo/AutoWalking_script" target="_blank">AutoWalking_script</a> – This is a simple auto walking script, for lazy people who can't hold w for long :).</li>
+                <li><a href="https://github.com/darkuchihagare-sudo/ice_raid_OneFruitSim" target="_blank">Ice Raid Bot for One Fruit Simulator</a> – This script automates the ice raid in One Fruit Simulator (Roblox) . It was made specifically for this raid and might not be as effective for others.</li>
+                <li><a href="https://github.com/darkuchihagare-sudo/Autoclicker_One_Fruit_simulator" target="_blank">Autoclicker Script</a> – This script is a simple autoclicker that can be used in "One Fruit Simulator" or any other game that requires you to stay active or click repeatedly.</li>
+            </ul>
+        </section>
+        <article>
+            <h2>About My Projects</h2>
+            <p>
+                Here you'll find a selection of my recent work, including web applications, scripts, and experiments with new technologies. Each project reflects my passion for learning and building solutions to real-world problems.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <h2 id="Contacts">Contacts:</h2>
+        <ul id="ContactsTable">
+            <li><a href="https://github.com/darkuchihagare-sudo" target="_blank">GitHub</a></li>
+            <li><a href="mailto:darkuchihagare@gmail.com">Email</a></li>
+            <li><a href="https://www.youtube.com/@darkreycon1528">YouTube</a></li>
+        </ul>
+    </footer>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

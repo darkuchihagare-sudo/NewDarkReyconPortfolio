@@ -11,23 +11,30 @@
     <header>
         <h2>Projects</h2>
     </header>
+
     <nav class="nav_bar">
         <div class="tab1">
-            <span><a href="dark.html" id="home_tab" style="color: grey;">Home</a></span>
+            <span><a href="indexBlog.html" id="home_tab">Home</a></span>
             <hr>
         </div>
         <div class="tab2">
-            <span><a href="DarkProj.html" id="projects_tab" style="color: white;">Projects</a></span>
+            <span><a href="DarkProj.html" id="projects_tab">Projects</a></span>
+            <hr>
+        </div>
+        <div class="tab3">
+            <span><a href="BooksBlog.html" id="books_tab">Books</a></span>
             <hr>
         </div>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="dark.html">Home</a>
+                <a href="indexBlog.html">Home</a>
                 <a href="DarkProj.html">Projects</a>
+                <a href="BooksBlog.html">Books</a>
             </div>
         </div>
     </nav>
+
     <main>
         <article>
             <h2>About My Projects</h2>
@@ -35,6 +42,7 @@
                 Here you'll find a selection of my recent work, including web applications, scripts, and experiments with new technologies. Each project reflects my passion for learning and building solutions to real-world problems.
             </p>
         </article>
+        <hr style="color: deepskyblue; background-color: deepskyblue; margin-left: 5rem; margin-right: 5rem; height: 0.4rem; border-radius: 0.5rem;">
         <section>
             <h2>Featured Projects</h2>
             <ul>
@@ -44,6 +52,7 @@
             </ul>
         </section>
     </main>
+    <hr style="color: deepskyblue; background-color: deepskyblue; margin-left: 5rem; margin-right: 5rem; height: 0.4rem; border-radius: 0.5rem;">
     <footer>
         <h2 id="Contacts">Contacts:</h2>
         <ul id="ContactsTable">
@@ -59,7 +68,8 @@
         window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('show')) {
                         openDropdown.classList.remove('show');

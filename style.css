@@ -160,8 +160,8 @@ header {
     display: flex;
     column-gap: 5rem;
     min-height: 25px;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #aside1 {
@@ -219,8 +219,8 @@ section {
     /* background-color: rgb(48, 94, 109); */
     background-color: rgb(14, 28, 32);
     padding: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     min-height: 100px;
 }
 
@@ -250,8 +250,8 @@ article {
     /* background-color: rgb(38, 74, 86); */
     background-color: rgb(14, 28, 32);
     padding: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     min-height: 100px;
 }
 
@@ -259,7 +259,7 @@ footer {
     display: block;
     clear: both;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     /* background-color: rgb(19, 37, 43); */
     background-color: rgb(14, 28, 32);
     margin-left: 3rem;
@@ -271,15 +271,13 @@ footer {
 #Contacts {
     text-align: left;
     font-size: 1.2rem;
-    margin-left: -50px;
     margin-top: -60px;
 }
 
 #ContactsTable {
     background-color: rgb(19, 37, 43);
     max-width: 370px;
-    min-width: 300px;
-    margin-left: -50px;
+    min-width: 150px;
     border-radius: 10px;
     text-align: left;
     display: flex;
@@ -328,6 +326,8 @@ a:hover {
 @media screen and (max-width: 700px) {
     section, article, footer, #ContactsTable{
         display: grid;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 

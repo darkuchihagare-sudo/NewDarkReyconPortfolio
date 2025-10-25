@@ -9,6 +9,19 @@ body {
     background-color: rgb(14, 28, 32);
 }
 
+.square {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+  background: rgb(42, 202, 255);
+  animation: pulse 1s linear infinite alternate;
+}
+
+@keyframes pulse {
+    to {
+        background-color: rgb(183, 0, 255);
+    }
+}
 
 header {
     background-color: rgb(14, 28, 32);
@@ -43,6 +56,10 @@ header {
     position: absolute;
     bottom: 0;
     left: 35%;
+}
+
+.tab1 hr {
+    left: 38px;
 }
 
 .tab1:hover hr,
@@ -168,6 +185,24 @@ header {
     float: left;
     width: 40%;
     font-size: 1.8rem;
+}
+
+#aside2 {
+    float: left;
+    width: 25%;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 0.15rem rgba(0, 191, 255, 0.6) solid;
+    border-radius: 10px;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 300px;
+}
+
+#chapter1 {
+    display: inline;
+
 }
 
 #aside1 hr {
@@ -324,12 +359,20 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-    section, article, footer, #ContactsTable{
+    section, article, footer, #ContactsTable, {
         display: grid;
         margin-left: 0rem;
         margin-right: 0rem;
     }
 }
+
+@media screen and (max-width: 450px) {
+    #aside2 {
+        display: grid;
+        width: 70%;
+        height: 80%;
+}
+
 
 @media screen and (max-width: 850px) {
     .row1 {
